@@ -1,0 +1,7 @@
+#sec_performo {
+  position: fixed;
+  right: 0; bottom: 0; left: 0;
+  contain: layout paint;
+  height: 100px;
+  background-color: #FFF;
+}

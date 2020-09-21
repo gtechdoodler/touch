@@ -1,24 +1,37 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState, useEffect } from 'react';
 import './App.css';
+import perf from './components/Perf/Perf';
+import event from './components/Events/Event';
+import throttle from 'lodash.throttle';
+
+perf();
 
 function App() {
+
+  console.log('Loading');
+
+  const [touchMoveStatus, setTouchMoveStatus] = useState('');
+  const [scrollStatus, setScrollStatus] = useState(null);
+
+  useEffect(() => {
+  }, [])
+
+  event.on('touchmove', 'lazyloading', throttle((e) => {
+    console.log('touchmove', e);
+    setTouchMoveStatus('Moved!')
+  }, 100));
+
+  event.on('scroll', 'scrollingtest', throttle((e) => {
+    console.log('scroll', e);
+    setScrollStatus('Moved!')
+  }, 100));
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="App-container">
+        <div>{touchMoveStatus}</div>
+        <div>{scrollStatus}</div>
+      </div>
     </div>
   );
 }
