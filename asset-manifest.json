@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/touch/static/css/main.687a10c6.chunk.css",
+    "main.js": "/touch/static/js/main.f4314aa1.chunk.js",
+    "main.js.map": "/touch/static/js/main.f4314aa1.chunk.js.map",
+    "runtime-main.js": "/touch/static/js/runtime-main.3262c82a.js",
+    "runtime-main.js.map": "/touch/static/js/runtime-main.3262c82a.js.map",
+    "static/js/2.3389960c.chunk.js": "/touch/static/js/2.3389960c.chunk.js",
+    "static/js/2.3389960c.chunk.js.map": "/touch/static/js/2.3389960c.chunk.js.map",
+    "index.html": "/touch/index.html",
+    "precache-manifest.426d5ab0c8a7de147733ad815706779d.js": "/touch/precache-manifest.426d5ab0c8a7de147733ad815706779d.js",
+    "service-worker.js": "/touch/service-worker.js",
+    "static/css/main.687a10c6.chunk.css.map": "/touch/static/css/main.687a10c6.chunk.css.map",
+    "static/js/2.3389960c.chunk.js.LICENSE.txt": "/touch/static/js/2.3389960c.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3262c82a.js",
+    "static/js/2.3389960c.chunk.js",
+    "static/css/main.687a10c6.chunk.css",
+    "static/js/main.f4314aa1.chunk.js"
+  ]
+}
